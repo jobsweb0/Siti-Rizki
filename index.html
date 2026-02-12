@@ -1,0 +1,183 @@
+<!DOCTYPE html><html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Undangan Pernikahan VIP</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{
+  font-family:'Montserrat',sans-serif;
+  background:linear-gradient(120deg,#89f7fe,#66a6ff,#fbc2eb);
+  color:#fff;
+}/* HERO */ .hero{ min-height:100vh; background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),url('https://images.unsplash.com/featured/?luxury,wedding,couple'); background-size:cover; background-position:center; display:flex; align-items:center; justify-content:center; }
+
+.glass-card{ background:rgba(255,255,255,0.15); backdrop-filter:blur(18px); border:1px solid rgba(255,255,255,0.3); box-shadow:0 30px 90px rgba(0,0,0,.6); border-radius:35px; padding:50px 35px; max-width:450px; width:90%; text-align:center; animation:fadeIn 2s ease; }
+
+.title{ font-family:'Great Vibes',cursive; font-size:56px; text-shadow:0 0 25px rgba(255,255,255,.6); }
+
+.subtitle{ font-family:'Cormorant Garamond',serif; letter-spacing:4px; margin-bottom:15px; }
+
+.btn{ display:inline-block; padding:14px 40px; border-radius:50px; background:linear-gradient(45deg,#ffffff,#d4f1ff); color:#111; text-decoration:none; font-weight:600; margin-top:15px; box-shadow:0 12px 35px rgba(255,255,255,.5); }
+
+/* SECTION */ .section{ padding:90px 20px; display:flex; justify-content:center; }
+
+.glass{ background:rgba(255,255,255,0.15); backdrop-filter:blur(18px); border-radius:35px; padding:50px 35px; max-width:1000px; width:100%; text-align:center; box-shadow:0 25px 70px rgba(0,0,0,.5); }
+
+.section h2{ font-family:'Cormorant Garamond',serif; letter-spacing:3px; margin-bottom:25px; }
+
+/* COUPLE */ .couple{ display:grid; grid-template-columns:1fr 1fr; gap:30px; margin-top:40px; }
+
+.person{ background:rgba(255,255,255,0.2); border-radius:30px; padding:30px; }
+
+.person img{ width:150px; height:150px; border-radius:50%; border:3px solid rgba(255,255,255,0.7); object-fit:cover; }
+
+.name{ font-family:'Great Vibes',cursive; font-size:38px; margin-top:10px; }
+
+/* COUNTDOWN */ .countdown{ display:flex; justify-content:center; gap:15px; margin-top:30px; }
+
+.time{ background:rgba(255,255,255,0.25); padding:15px 20px; border-radius:20px; min-width:70px; }
+
+/* GALLERY */ .gallery{ display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:15px; margin-top:30px; }
+
+.gallery img{ width:100%; height:180px; object-fit:cover; border-radius:20px; box-shadow:0 10px 25px rgba(0,0,0,.4); }
+
+.footer{ text-align:center; padding:40px; font-size:14px; opacity:.8; }
+
+@keyframes fadeIn{ from{opacity:0;transform:translateY(30px)} to{opacity:1;transform:translateY(0)} }
+
+@media(max-width:600px){ .couple{grid-template-columns:1fr} .title{font-size:44px} } </style>
+
+</head>
+<body><!-- AUDIO --><audio id="bgMusic" loop>
+  <source src="nikahan.mp3" type="audio/mpeg">
+</audio><!-- HERO --><div class="hero" id="home">
+  <div class="glass-card">
+    <div class="subtitle">WEDDING INVITATION</div>
+    <div class="title">Rizki & Siti</div>
+    <p>Kami mengundang Anda ke hari bahagia kami</p>
+    <a href="#content" class="btn" onclick="openInvitation()">Buka Undangan</a>
+  </div>
+</div><!-- CONTENT --><div id="content" class="section">
+  <div class="glass">
+    <h2>Assalamu'alaikum Wr. Wb.</h2>
+    <p>Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud menyelenggarakan pernikahan:</p><div class="couple">
+  <div class="person">
+    <img src="foto1.jpg" alt="Pengantin Pria">
+    <div class="name">Rizki Triono</div>
+    <p>Putra dari Bapak Alm.Kadir Karyono Sugiarto & Ibu Nilah</p>
+  </div>
+  <div class="person">
+    <img src="foto6.jpg" alt="Pengantin Wanita">
+    <div class="name">Siti Munawaroh</div>
+    <p>Putri dari Bapak Alm.Radimin & Ibu Basinah</p>
+  </div>
+</div>
+
+<!-- LOKASI -->
+<div class="person" style="margin-top:40px">
+  <h3>Hajatan</h3>
+  <p><b>Jumat, 27 Februari 2026</b></p>
+  <p>07.00 WIB - Selesai</p>
+  <p>Rumah Mempelai Wanita</p>
+  <br>
+  
+  
+  <!-- GOOGLE MAPS EMBED -->
+  <div style="margin-top:25px;border-radius:20px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.4)">
+    <iframe 
+  src="https://www.google.com/maps?q=-7.630377,109.135191&output=embed"
+  width="100%" 
+  height="250" 
+  style="border:0;" 
+  allowfullscreen="" 
+  loading="lazy">
+</iframe>
+  </div>
+  <a class="btn" href="geo:-7.630377,109.135191?q=-7.630377,109.135191">
+  Buka Google Maps
+</a>
+</div>
+
+<!-- GALLERY -->
+<h2 style="margin-top:60px">Galeri</h2>
+<div class="gallery">
+  <img src="foto2.jpg">
+  <img src="foto3.jpg">
+  <img src="foto4.jpg">
+</div>
+
+<!-- HADIAH DIGITAL -->
+<h2 style="margin-top:60px">Hadir Secara Doa</h2>
+<div class="person" style="margin-top:25px">
+  <p>Apabila Bapak/Ibu/Saudara/i berhalangan hadir, doa restu dan tanda kasih dapat disampaikan melalui:</p>
+  <br>
+  <div style="background:rgba(255,255,255,0.25);padding:20px;border-radius:20px">
+    <p><b>Bank BCA</b></p>
+    <p>No. Rekening: <b>5890262793</b></p>
+    <b>Rizki Tritono</b>
+    
+    
+    <p><br>Bank BCA</br></p>
+    <p>No. Rekening: <b>2440480899</b></p>
+    <b>Siti Munawaroh</b>
+  </div>
+</div>
+
+  </div>
+</div><div class="footer">
+  <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir.</p>
+  <p><b>Terima Kasih</b></p>
+</div><script>
+// COUNTDOWN
+const targetDate = new Date("2026-02-20T09:00:00").getTime();
+const countdown = document.getElementById("countdown");
+
+setInterval(()=>{
+  const now = new Date().getTime();
+  const distance = targetDate - now;
+
+  if(distance < 0){
+    countdown.innerHTML = "<div class='time'>Hari ini</div>";
+    return;
+  }
+
+  const days = Math.floor(distance / (1000*60*60*24));
+  const hours = Math.floor((distance % (1000*60*60*24))/(1000*60*60));
+  const minutes = Math.floor((distance % (1000*60*60))/(1000*60));
+  const seconds = Math.floor((distance % (1000*60))/1000);
+
+  countdown.innerHTML = `
+    <div class='time'><b>${days}</b><br>Hari</div>
+    <div class='time'><b>${hours}</b><br>Jam</div>
+    <div class='time'><b>${minutes}</b><br>Menit</div>
+    <div class='time'><b>${seconds}</b><br>Detik</div>
+  `;
+},1000);
+function openInvitation(){
+  const music = document.getElementById("bgMusic");
+  if(music){
+    music.play().catch(err=>console.log("Audio error:",err));
+  }
+}
+
+function autoTFBCA(){
+  const rekening = "5890262793";
+  const nama = "Rizki Tritono";
+
+  // copy rekening
+  navigator.clipboard.writeText(rekening).then(()=>{
+    console.log("Rekening disalin");
+  });
+
+  // buka aplikasi BCA
+  window.location.href = "bca://transfer";
+
+  // fallback jika app tidak ada
+  setTimeout(()=>{
+    window.location.href = "https://www.bca.co.id";
+  },1200);
+}
+</script>
+</body>
+</html>
